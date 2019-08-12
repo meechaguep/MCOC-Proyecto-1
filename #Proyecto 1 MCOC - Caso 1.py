@@ -31,7 +31,7 @@ u_km1 = u_k.copy()
 
 #Parametros del problema (madera)
 dt = 1		#s 			paso de integracion
-K = 0.8		#m2/s 		coeficiente de difusion de calor
+K = 0.13		#m2/s 		coeficiente de difusion de calor
 rho = 475	#kg / m3  	densidad
 c = 2300	#J / kg*C 	capacidad calorica especifica
 

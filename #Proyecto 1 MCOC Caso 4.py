@@ -60,4 +60,5 @@ for k in range(5000):
 		plot (x,u_k)
 
 title("k = {}   t = {} s".format(k, k*dt))
+plt.savefig("MCOC Caso 4.png")
 show ()

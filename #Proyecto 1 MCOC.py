@@ -59,6 +59,8 @@ for k in range(3600*5):
 	u_k = u_km1
 	if k % 200 == 0:
 		plot (x,u_k)
-
+xlabel('Largo del dominio L')
+ylabel('Temperatura u_k')
+plt.savefig('MCOC-Casox.png')
 title("k = {}   t = {} s".format(k, k*dt))
 show ()

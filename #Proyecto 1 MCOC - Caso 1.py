@@ -45,7 +45,7 @@ plot(x,u0, "k--")
 
 #Loop en elt iempo
 k = 0
-for k in range(5000):
+for k in range(3600*5):
 	t = dt*k
 	print "k =", k, "t = ", t
 	#Loop en el espacio i = 1 ... n-1   u_km1[0] = 0  u_km1[n] = 20
@@ -58,6 +58,8 @@ for k in range(5000):
 	u_k = u_km1
 	if k % 200 == 0:
 		plot (x,u_k)
+xlabel('Largo del dominio L')
+ylabel('Temperatura u_k')
 plt.savefig('MCOC-Caso1.png')
 title("k = {}   t = {} s".format(k, k*dt))
 show ()

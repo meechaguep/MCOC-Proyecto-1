@@ -58,6 +58,6 @@ for k in range(5000):
 	u_k = u_km1
 	if k % 200 == 0:
 		plot (x,u_k)
-
+plt.savefig('MCOC-Caso1.png')
 title("k = {}   t = {} s".format(k, k*dt))
 show ()

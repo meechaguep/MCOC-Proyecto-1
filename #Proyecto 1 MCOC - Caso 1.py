@@ -30,17 +30,17 @@ u_k[n]=20.
 u_km1 = u_k.copy()
 
 #Parametros del problema (madera)
-dt = 1		#s 			paso de integracion
-K = 0.13		#m2/s 		coeficiente de difusion de calor
+dt = 1		#s 		paso de integracion
+K = 0.13	#m2/s 		coeficiente de difusion de calor
 rho = 475	#kg / m3  	densidad
 c = 2300	#J / kg*C 	capacidad calorica especifica
-
+alpha=K*dt/(c*rho*dx**2)
 print "dt = ", dt
 print "dx = ", dx
 print "K = ", K
 print "c = ", c
 print "rho = ", rho
-
+print 'alpha =' , alpha
 plot(x,u0, "k--")
 
 #Loop en elt iempo
@@ -60,6 +60,7 @@ for k in range(3600*5):
 		plot (x,u_k)
 xlabel('Largo del dominio L')
 ylabel('Temperatura u_k')
-plt.savefig('MCOC-Caso1.png')
+
 title("k = {}   t = {} s".format(k, k*dt))
+plt.savefig('MCOC-Caso1.png')
 show ()

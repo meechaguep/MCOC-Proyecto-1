@@ -2,7 +2,7 @@
 
 ===================
 
-##Difusión de calor en homigones masivos.
+## Difusión de calor en homigones masivos.
 
 ===================
 

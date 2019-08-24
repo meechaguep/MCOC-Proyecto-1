@@ -7,7 +7,7 @@ Created on Thu Aug 22 22:57:56 2019
 import numpy as np
 import scipy as sp
 import matplotlib.pyplot as plt
-
+from scipy.interpolate import interp1d
 Temp=open('Temperatura.txt')
 Time=open('Tiempo.txt')
 temperatura=[]
